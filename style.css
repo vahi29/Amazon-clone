@@ -1,0 +1,398 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:Outfit;
+}
+body{
+    background-color:#dadada;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+
+}
+
+nav{
+    display:flex;
+    background-color: #131921;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
+    color:white;
+    
+}
+.nav-location{
+    display:flex;
+    align-items:flex-end;
+    font-size:13px;
+    margin-left: 15px;
+
+}
+.nav-location h6{
+    color:#fff;
+    font-size: 15px;
+}
+.nav-search{
+    display:flex;
+    color:grey;
+    background-color: #fff;
+    align-items: center;
+    flex:1;
+    border-radius:5px;
+    max-width:1000px;
+    margin-left:15px;
+}
+.searchfield{
+    display:flex;
+    align-items: center;
+    padding:10px 10px;
+    gap:6px;
+    background-color: #8080801e;
+    border-right: 1px solid #8080801e;
+}
+.nav-search-input{
+    border-style: none;
+    outline:none;
+    width:100%;
+    padding-left:20px;
+    
+}
+.img-icon{
+    max-width:40px;
+    padding:8px;
+    border-radius: 2px;
+    background-color:rgba(255, 255, 0, 0.692);
+}
+.language{
+    display:flex;
+    align-items:center;
+    margin-left:15px;
+    gap:4px;
+}
+.nav-text{
+    margin-left: 15px;
+}
+.nav-text p{
+    font-size:13px;
+}
+.nav-text h6{
+    font-size:15px;
+}
+.cart-icon{
+    margin-left:15px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+.menusection{
+display:flex;
+align-items:center;
+    background-color:rgba(18, 25, 33, 0.911);
+    color:white;
+    font-size:15px;
+    padding:8px 18px;
+    gap:17px;
+    
+}
+.menusection div{
+    display:flex;
+align-items:center;
+gap:5px;
+font-weight:400;
+
+}
+
+.image-slider ul{
+    display:flex;
+    overflow-y:hidden;
+}
+.sliderimg{
+    max-width:100%;
+    mask-image: linear-gradient(to bottom,white 22%,transparent 100%);
+
+
+}
+.image-slider a{
+    text-decoration:none;
+    position:absolute;
+    top:25%;
+    font-size:29px;
+    font-weight:400;
+    padding:5vh 1vw;
+    background-color: #d3cfcfd7;
+    z-index:1;
+    cursor: pointer;
+    
+}
+.next{
+    right:0px;
+}
+
+.card{
+    position: relative;
+    top:-300px;
+}
+.product-card-container{
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+}
+.produt-card{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    max-width:310px;
+    justify-content: space-between;
+    box-shadow: -5px -5px 10px white,5px 5px 10px white;
+
+    
+}
+.produt-card h2{
+    margin:0;
+    padding:10px;
+}
+.product-card-nested{
+    display:flex;
+    flex-wrap:wrap;
+   justify-content: space-evenly;
+}
+.nested-image p{
+    margin:6px;
+}
+.nested-image img{
+    width:132px;
+    height:120px;
+object-fit: cover;
+}
+
+.product-btn{
+    font-size:15px;
+    margin:8px 9px;
+    border:none;
+    color:blue;
+    background-color: transparent;
+    align-self: flex-start;
+    padding-left:0px;
+}
+
+.box-row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:15px 22px;
+    row-gap: 15px;
+    position: relative;
+    top:-300px;
+    
+
+}
+.box-col{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:15px 20px;
+    background-color: white;
+    max-width:310px;
+    min-height:360px;
+    box-shadow: -5px -5px 10px white,5px 5px 10px white;
+
+
+}
+.box-col img{
+    object-fit: cover;
+    height:100%;
+
+}
+.box-col a{
+    text-decoration: none;
+    color:blue;
+}
+
+
+
+.deals-slider{
+    top:-290px;
+    position:relative;
+    width:100%;
+    height:300px;
+padding:23px;
+}
+.deals-item{
+    display:flex;
+    margin-top:7px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.deals-item::-webkit-scrollbar{
+    background-color:transparent;
+    height:10px;
+    cursor: pointer;
+}
+.deals-item::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    cursor: pointer;
+}
+.deals-item li{
+    list-style-type: none;
+    cursor: pointer;
+margin-bottom: 12px;
+margin-top: 12px;
+}
+.deals-container{
+    background-color: white;
+    width:100%;
+    min-height:100%;
+    padding:20px;
+    overflow-x: hidden;
+    position: relative;
+    box-shadow: -5px -5px 10px white,5px 5px 10px white;
+
+}
+.deals-container li img{
+    padding-left: 15px;
+    object-fit: cover;
+    
+}
+.deals-container h3{
+    font-size: 28px;
+    
+    
+}
+
+.left-btn{
+
+    position:absolute;
+    top:165px;
+    font-size: 32px;
+    background-color:#d3cfcfd7;
+    padding:8px;
+    cursor: pointer;
+}
+.right-btn{
+
+    position:absolute;
+    top:165px;
+    font-size: 32px;
+    background-color:#d3cfcfd7;
+    padding:8px;
+    cursor: pointer;
+    right:0;
+}
+.left-btn:hover{
+    border: 3px solid rgb(141, 141, 245);
+
+}
+.right-btn:hover{
+    border: 3px solid rgb(141, 141, 245);
+}
+
+
+.second-slider{
+    top:-250px;
+    margin-top: 20px;
+}
+
+.row{
+    position:relative;
+    top:-180px;
+}
+.card-1{
+    position:relative;
+    top:-170px;
+
+}
+.thirdslider{
+    position: relative;
+    top:-180px;
+    
+}
+.offer{
+    display:flex;
+    padding-left:15px;
+    margin-top: 20px;
+    width:200px;
+    
+flex-direction:row;
+gap:18px;
+
+}
+.offer span{
+    font-size: 15px;
+    font-weight: bold;
+    color:red;
+    text-align: center;
+
+    
+}
+.offer p{
+    background-color: red;
+    color:white;
+    padding:5px;
+    font-size: 12px;
+border-radius: 10%;
+
+}
+.para{
+    padding-left: 15px;
+    margin-top: 7px;
+    font-size:15px;
+}
+
+.item-2 li img{
+    padding-left:30px;
+}
+.fourthslider{
+    position: relative;
+    top:-43px;
+    
+}
+.footer-section{
+    
+    position:relative;
+    top:8px;
+}
+.backtotop{
+    width:100%;
+    height:40px;
+    background-color: red;
+    text-align: center;
+    padding:10px;
+    background-color:rgba(18, 25, 33, 0.911);
+    color:white;
+}
+.backtotop:hover{
+    background-color: black;
+}
+.footer-values{
+    width:100%;
+    height:350px;
+    background-color: #131921;
+    color:white;
+    position: relative;
+    top:-0px;
+}
+.table{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    
+}
+.thead h3{
+    margin-bottom: 13px;
+    margin-top: 32px;
+    
+}
+.thead ul li{
+    list-style-type: none;
+    padding:5px;
+    font-size: 14px;
+}
+.copy{
+    text-align: center;
+    background-color: #131921;
+    color: #fff;
+    padding:10px;
+}
